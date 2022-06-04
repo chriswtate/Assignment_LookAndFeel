@@ -1,0 +1,86 @@
+<html>
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #111;
+                }
+
+        .active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="charts.html">Charts</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li style="float:right"><a href="events.html">Events</a></li>
+    </ul>
+
+    <canvas id="chrisChart" style="width:100%"></canvas>
+
+    <script>
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var barColors = [
+            "Red",
+            "Blue",
+            "Green",
+            "Orange",
+            "Yellow",
+            "Black",
+            "Magenta",
+            "Purple",
+            "Aqua",
+            "Pink",
+            "Brown",
+            "Lime"
+        ];
+
+        new Chart("chrisChart", {
+            type: "doughnut",
+            data: {
+                labels: months,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: [10, 20, 25, 30, 35, 40, 10, 15, 20, 26, 34, 90]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Hours of Netflix Watched"
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
