@@ -22,7 +22,7 @@
                 display: block;
                 color: white;
                 text-align: center;
-                padding: 14px 16px;
+                padding: 20px 20px;
                 text-decoration: none;
             }
 
@@ -33,54 +33,86 @@
         .active {
             background-color: #04AA6D;
         }
+        .site-footer {
+            background-color: #000000;
+            padding: 10px 0 10px;
+            font-size: 15px;
+            color: white;
+        }
     </style>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <body>
 
     <ul>
+        <li><img src="img/usf-logo-png-2.png" style="width: 100px; height: 60px;background-color: white;"></li>
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="charts.html">Charts</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li style="float:right"><a href="events.html">Events</a></li>
     </ul>
 
-    <canvas id="chrisChart" style="width:100%"></canvas>
+    <canvas id="movieChart" style="width:50%"></canvas>
+
+    <canvas id="tvChart" style="width:50%"></canvas>
 
     <script>
-        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var movies = ["The Shawshank Redemption", "The Godfather", "The Dark Knight", "The Godfather: Part II", "12 Angry Men"];
+        var tv = ["Breaking Bad", "Band of Brothers", "Chernobyl", "The Wire", "Avatar: The Last Airbender"];
         var barColors = [
             "Red",
             "Blue",
             "Green",
             "Orange",
-            "Yellow",
-            "Black",
-            "Magenta",
-            "Purple",
-            "Aqua",
-            "Pink",
-            "Brown",
-            "Lime"
+            "Black"
         ];
 
-        new Chart("chrisChart", {
+        new Chart("movieChart", {
             type: "doughnut",
             data: {
-                labels: months,
+                labels: movies,
                 datasets: [{
                     backgroundColor: barColors,
-                    data: [10, 20, 25, 30, 35, 40, 10, 15, 20, 26, 34, 90]
+                    data: [10, 20, 25, 30, 40]
                 }]
             },
             options: {
                 title: {
                     display: true,
-                    text: "Hours of Netflix Watched"
+                    text: "Top 5 Movies - Hours Watched"
+                }
+            }
+        });
+
+        new Chart("tvChart", {
+            type: "doughnut",
+            data: {
+                labels: tv,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: [15, 20, 26, 34, 90]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Top 5 TV Shows - Hours Watched"
                 }
             }
         });
     </script>
-
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <p class="copyright-text">
+                        Copyright &copy; 2022 All Rights Reserved - ISM 6225 Assignment 2
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
 </body>
 </html>
