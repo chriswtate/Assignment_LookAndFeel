@@ -43,74 +43,99 @@
                 }
 
         .active {
-            background-color: #04AA6D;
+            background-color: #808080;
         }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            /* Links inside the navbar */
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .navbar a:hover {
+                    background: #ddd;
+                    color: black;
+                }
     </style>
 </head>
 
-    <body BGCOLOR="#000000" TEXT="#FFFFFF">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="charts.html">Charts</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li style="float:right"><a class="active" href="events.html">Events</a></li>
-        </ul>
-        <HR SIZE=4 WIDTH=100%>
-        <h1 ALIGN=CENTER>Netflix Release Dates</h1>
-        <p ALIGN=CENTER>Keep these dates in mind! Click on the Film/Series title for more information.</p>
-        <table style="width:80%" align="CENTER">
-            <tr>
-                <th width="150">Film/Series</th>
-                <th width="150">Release Date</th>
-                <th>Description</th>
-                <th>Series/Film Frame</th>
-            </tr>
-            <tr>
-                <td align="center"><A href="https://en.wikipedia.org/wiki/Stranger_Things" target="_blank">Stranger Things (Season 4)</A></td>
-                <Td align="center">May 27<sup>th</sup>, 2022</Td>
-                <td>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</td>
-                <td align="center"> <IMG SRC=https://imgix.bustle.com/uploads/image/2022/5/17/e8fc6592-15d7-4393-9798-2669d7e82dcb-stranger-things-feature-header.jpg height="235" width="300" /></td>
-            </tr>
-            <tr>
-                <td align="center"><A href="https://en.wikipedia.org/wiki/Hustle_(2022_film)" target="_blank">Hustle</A></td>
-                <Td align="center">June 8<sup>th</sup>, 2022</Td>
-                <td>Adam Sandler is following up the semi-basketball movie Uncut Gems with a full-blown basketball movie. In Hustle, he plays a scout who discovers an incredible player while abroad and attempts to bring him into the States and in front of the NBA. </td>
-                <td align="center"> <IMG SRC=https://assets3.thrillist.com/v1/image/3075921/1584x1054/crop.jpg height="235" width="300" /></td>
-            </tr>
-            <tr>
-                <td align="center"><A href="https://en.wikipedia.org/wiki/Peaky_Blinders_(TV_series)" target="_blank">Peaky Blinders (Season 6)</A></td>
-                <Td align="center">June 10<sup>th</sup>, 2022</Td>
-                <td>It's Peaky Blinders! Thomas Shelby and his crime family aren't done attempting to take down their rivals quite yet. Stephen Knight's hit period drama returns for a final season this year.</td>
-                <td align="center"> <IMG SRC=https://i.ytimg.com/vi/M-7v9bP10-U/maxresdefault.jpg height="235" width="300" /></td>
-            </tr>
-            <tr>
-                <td align="center"><A href="https://en.wikipedia.org/wiki/The_Umbrella_Academy_(TV_series)" target="_blank">The Umbrella Academy (Season 3)</A></td>
-                <Td align="center">June 22<sup>nd</sup>, 2022</Td>
-                <td>The Sparrows have arrived at the Umbrella Academy, shaking up the status quo once again for the Hargreeves family. After Season 2’s time travel extravaganza, the superpowered Hargreeves siblings must reluctantly join forces once again to save their home from sinister invaders—one of which appears to be their long-dead brother.</td>
-                <td align="center"> <IMG SRC=https://assets3.thrillist.com/v1/image/3068652/1584x1054/crop.jpg height="235" width="300" /></td>
-            </tr>
-            <tr>
-                <td align="center"><A href="https://en.wikipedia.org/wiki/Forrest_Gump" target="_blank">Forrest Gump</A></td>
-                <Td align="center">September 20<sup>th</sup>, 2022</Td>
-                <td>A gentle, friendly man navigates through the major events of the 1960s and '70s while inspiring those around him with his perpetual optimism. Watch all you want. This whimsical tale swept the 1994 Oscars, taking home Best Picture, Best Actor, Best Director and three other awards.</td>
-                <td align="center"> <IMG SRC=https://m.media-amazon.com/images/M/MV5BZjkwYzk2ZGUtMDFkMy00MjM3LTgwNTktZmYwMDBmMjczMmJjXkEyXkFqcGdeQWpnYW1i._V1_.jpg height="235" width="300" /></td>
-            </tr>
-        </table>
+<body BGCOLOR="#000000" TEXT="#FFFFFF">
+    <div class="navbar">
+        <!--<img src="img/usf-logo-png-2.png" style="width: 100px; height: 60px;background-color: white;">-->
+        <a href="index.html">Home</a>
+        <a href="charts.html">Charts</a>
+        <a class="active" href="events.html">Events</a>
+        <a href="about.html">About</a>
+    </div>
 
-        <!-- Site footer -->
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 col-md-3">
-                        <p class="copyright-text">
-                            Copyright &copy; 2022 All Rights Reserved - ISM 6225 Assignment 2
-                        </p>
-                    </div>
+    <HR SIZE=4 WIDTH=100%>
+    <h1 ALIGN=CENTER>Netflix Release Dates</h1>
+    <p ALIGN=CENTER>Keep these dates in mind! Click on the Film/Series title for more information.</p>
+    <table style="width:80%" align="CENTER">
+        <tr>
+            <th width="150">Film/Series</th>
+            <th width="150">Release Date</th>
+            <th>Description</th>
+            <th>Series/Film Frame</th>
+        </tr>
+        <tr>
+            <td align="center"><A href="https://en.wikipedia.org/wiki/Stranger_Things" target="_blank">Stranger Things (Season 4)</A></td>
+            <Td align="center">May 27<sup>th</sup>, 2022</Td>
+            <td>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</td>
+            <td align="center"> <IMG SRC=https://imgix.bustle.com/uploads/image/2022/5/17/e8fc6592-15d7-4393-9798-2669d7e82dcb-stranger-things-feature-header.jpg height="235" width="300" /></td>
+        </tr>
+        <tr>
+            <td align="center"><A href="https://en.wikipedia.org/wiki/Hustle_(2022_film)" target="_blank">Hustle</A></td>
+            <Td align="center">June 8<sup>th</sup>, 2022</Td>
+            <td>Adam Sandler is following up the semi-basketball movie Uncut Gems with a full-blown basketball movie. In Hustle, he plays a scout who discovers an incredible player while abroad and attempts to bring him into the States and in front of the NBA. </td>
+            <td align="center"> <IMG SRC=https://assets3.thrillist.com/v1/image/3075921/1584x1054/crop.jpg height="235" width="300" /></td>
+        </tr>
+        <tr>
+            <td align="center"><A href="https://en.wikipedia.org/wiki/Peaky_Blinders_(TV_series)" target="_blank">Peaky Blinders (Season 6)</A></td>
+            <Td align="center">June 10<sup>th</sup>, 2022</Td>
+            <td>It's Peaky Blinders! Thomas Shelby and his crime family aren't done attempting to take down their rivals quite yet. Stephen Knight's hit period drama returns for a final season this year.</td>
+            <td align="center"> <IMG SRC=https://i.ytimg.com/vi/M-7v9bP10-U/maxresdefault.jpg height="235" width="300" /></td>
+        </tr>
+        <tr>
+            <td align="center"><A href="https://en.wikipedia.org/wiki/The_Umbrella_Academy_(TV_series)" target="_blank">The Umbrella Academy (Season 3)</A></td>
+            <Td align="center">June 22<sup>nd</sup>, 2022</Td>
+            <td>The Sparrows have arrived at the Umbrella Academy, shaking up the status quo once again for the Hargreeves family. After Season 2’s time travel extravaganza, the superpowered Hargreeves siblings must reluctantly join forces once again to save their home from sinister invaders—one of which appears to be their long-dead brother.</td>
+            <td align="center"> <IMG SRC=https://assets3.thrillist.com/v1/image/3068652/1584x1054/crop.jpg height="235" width="300" /></td>
+        </tr>
+        <tr>
+            <td align="center"><A href="https://en.wikipedia.org/wiki/Forrest_Gump" target="_blank">Forrest Gump</A></td>
+            <Td align="center">September 20<sup>th</sup>, 2022</Td>
+            <td>A gentle, friendly man navigates through the major events of the 1960s and '70s while inspiring those around him with his perpetual optimism. Watch all you want. This whimsical tale swept the 1994 Oscars, taking home Best Picture, Best Actor, Best Director and three other awards.</td>
+            <td align="center"> <IMG SRC=https://m.media-amazon.com/images/M/MV5BZjkwYzk2ZGUtMDFkMy00MjM3LTgwNTktZmYwMDBmMjczMmJjXkEyXkFqcGdeQWpnYW1i._V1_.jpg height="235" width="300" /></td>
+        </tr>
+    </table>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <p class="copyright-text">
+                        Copyright &copy; 2022 All Rights Reserved - ISM 6225 Assignment 2
+                    </p>
                 </div>
-                <hr>
             </div>
-        </footer>
-    </body>
+            <hr>
+        </div>
+    </footer>
+</body>
 </html>
 
 

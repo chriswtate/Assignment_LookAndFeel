@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <style>
-        ul {
+        ul.menu {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -10,16 +12,16 @@
             background-color: #333;
         }
 
-        li {
+        li.menu {
             float: left;
             border-right: 1px solid #bbb;
         }
 
-            li:last-child {
+            li.menu:last-child {
                 border-right: none;
             }
 
-            li a {
+            li.menu a {
                 display: block;
                 color: white;
                 text-align: center;
@@ -27,7 +29,7 @@
                 text-decoration: none;
             }
 
-                li a:hover:not(.active) {
+                li.menu a:hover:not(.active) {
                     background-color: #111;
                 }
 
@@ -70,72 +72,19 @@
         }
     </style>
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <body>
     <div class="navbar">
         <!--<img src="img/usf-logo-png-2.png" style="width: 100px; height: 60px;background-color: white;">-->
         <a href="index.html">Home</a>
-        <a class="active" href="charts.html">Charts</a>
+        <a href="charts.html">Charts</a>
         <a href="events.html">Events</a>
-        <a href="about.html">About</a>
+        <a class="active" href="about.html">About</a>
     </div>
 
     <div class="main">
-        <div class="row">
-            <div class="column" style="overflow: auto; ">
-                <canvas id="movieChart" style="width:50%"></canvas>
-            </div>
-            <div class="column" style="overflow: auto; ">
-                <canvas id="tvChart" style="width:50%"></canvas>
-            </div>
-        </div>
-
-        <script>
-            var movies = ["The Shawshank Redemption", "The Godfather", "The Dark Knight", "The Godfather: Part II", "12 Angry Men"];
-            var tv = ["Breaking Bad", "Band of Brothers", "Chernobyl", "The Wire", "Avatar: The Last Airbender"];
-            var barColors = [
-                "Red",
-                "Blue",
-                "Green",
-                "Orange",
-                "Black"
-            ];
-
-            new Chart("movieChart", {
-                type: "doughnut",
-                data: {
-                    labels: movies,
-                    datasets: [{
-                        backgroundColor: barColors,
-                        data: [10, 20, 25, 30, 40]
-                    }]
-                },
-                options: {
-                    title: {
-                        display: true,
-                        text: "Top 5 Movies - Hours Watched",
-
-                    }
-                }
-            });
-
-            new Chart("tvChart", {
-                type: "doughnut",
-                data: {
-                    labels: tv,
-                    datasets: [{
-                        backgroundColor: barColors,
-                        data: [15, 20, 26, 34, 90]
-                    }]
-                },
-                options: {
-                    title: {
-                        display: true,
-                        text: "Top 5 TV Shows - Hours Watched"
-                    }
-                }
-            });
-        </script>
+<!--
+Insert Code Here        
+-->
         <!-- Site footer -->
         <footer class="site-footer">
             <div class="container">
@@ -149,6 +98,8 @@
                 <hr>
             </div>
         </footer>
+
     </div>
+
 </body>
 </html>

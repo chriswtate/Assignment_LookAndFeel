@@ -34,7 +34,7 @@
                 }
 
         .active {
-            background-color: #04AA6D;
+            background-color: #808080;
         }
 
         .site-footer {
@@ -43,185 +43,214 @@
             font-size: 15px;
             color: white;
         }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            /* Links inside the navbar */
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .navbar a:hover {
+                    background: #ddd;
+                    color: black;
+                }
+
+        .main {
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
-    <ul>
-        <li><img src="img/usf-logo-png-2.png" style="width: 100px; height: 60px;background-color: white;"></li>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="charts.html">Charts</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li style="float:right"><a href="events.html">Events</a></li>
-    </ul>
-
-    <h1>Top 5 of All Time</h1>
-
-    <!-- Top 5 Movies -->
-    <h2>Movies</h2>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/shawshank-redemption.jpg" alt="The Shawshank Redemption" />
-        </div>
-        <div class="column">
-            <h3>1. The Shawshank Redemption</h3>
-            <p>
-                Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.<br />
-                <div>Year: 1994</div>
-                <div>Director: Frank Darabont</div>
-                <div>Writers: Stephen King and Frank Darabont</div>
-                <div>Actors: Tim Robbins, Morgan Freeman and Bob Gunton</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/the-godfather.jpg" alt="The Godfather" />
-        </div>
-        <div class="column">
-            <h3>2. The Godfather</h3>
-            <p>
-                The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.<br />
-                <div>Year: 1972</div>
-                <div>Director: Francis Ford Coppola</div>
-                <div>Writers: Mario Puzo and Francis Ford Coppola</div>
-                <div>Actors: Marlon Brando, Al Pacino and James Caan</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/the-dark-knight.jpg" alt="The Dark Knight" />
-        </div>
-        <div class="column">
-            <h3>3. The Dark Knight</h3>
-            <p>
-                When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.<br />
-                <div>Year: 2008</div>
-                <div>Director: Christopher Nolan</div>
-                <div>Writers: Jonathan Nolan, Christopher Nolan and David S. Goyer</div>
-                <div>Actors: Christian Bale, Heath Ledger and Aaron Eckhart</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/the-godfather-part2.jpg" alt="The Godfather: Part II" />
-        </div>
-        <div class="column">
-            <h3>4. The Godfather: Part II</h3>
-            <p>
-                The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.<br />
-                <div>Year: 1974</div>
-                <div>Director: Francis Ford Coppola</div>
-                <div>Writers: Mario Puzo and Francis Ford Coppola</div>
-                <div>Actors: Al Pacino, Robert De Niro and Robert Duvall</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/12-angry-men.jpg" alt="12 Angry Men" />
-        </div>
-        <div class="column">
-            <h3>5. 12 Angry Men </h3>
-            <p>
-                The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.<br />
-                <div>Year: 1957</div>
-                <div>Director: Signey Lumet</div>
-                <div>Writer: Reginal Rose</div>
-                <div>Actors: Henry Fonda, Lee J. Cobb and Martin Balsam</div>
-            </p>
-        </div>
+    <div class="navbar">
+        <!--<img src="img/usf-logo-png-2.png" style="width: 100px; height: 60px;background-color: white;">-->
+        <a class="active" href="index.html">Home</a>
+        <a href="charts.html">Charts</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
     </div>
 
-    <hr />
-
-    <!-- Top 5 TV Shows -->
-    <h2>TV Shows</h2>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/breaking-bad.jpg" alt="Breaking Bad" />
-        </div>
-        <div class="column">
-            <h3>1. Breaking Bad</h3>
-            <p>
-                A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.<br />
-                <div>Years: 2008 - 2013</div>
-                <div>Creator: Vince Gilligan</div>
-                <div>Stars: Bryan Cranston, Aaron Paul and Anna Gunn</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/band-of-brothers.jpg" alt="Band Of Brothers" />
-        </div>
-        <div class="column">
-            <h3>2. Band Of Brothers</h3>
-            <p>
-                The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day.<br />
-                <div>Year: 2001</div>
-                <div>Creators: Steven Spielberg and Tom Hanks</div>
-                <div>Stars: Scott Grimes, Damian Lewis and Ron Livingston</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/chernobyl.jpg" alt="Chernobyl" />
-        </div>
-        <div class="column">
-            <h3>3. Chernobyl</h3>
-            <p>
-                In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.<br />
-                <div>Year: 2019</div>
-                <div>Creator: Craig Mazin</div>
-                <div>Stars: Jessie Buckley, Jared Harris and Stellan Skarsgård</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/the-wire.jpg" alt="The Wire" />
-        </div>
-        <div class="column">
-            <h3>4. The Wire</h3>
-            <p>
-                The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.<br />
-                <div>Years: 2002 - 2008</div>
-                <div>Creator: David Simon</div>
-                <div>Stars: Dominic West, Lance Reddick and Sonja Sohn</div>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img width="200" src="./img/avatar.jpg" alt="Avatar: The Last Airbender" />
-        </div>
-        <div class="column">
-            <h3>5. Avatar: The Last Airbender</h3>
-            <p>
-                Tn a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.<br />
-                <div>Years: 2005 - 2008</div>
-                <div>Creators: Michael Dante DiMartino and Bryan Konietzko</div>
-                <div>Stars: Dee Bradley Baker, Zach Tyler Eisen and Mae Whitman</div>
-            </p>
-        </div>
-    </div>
-
-    <!-- Site footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                    <p class="copyright-text">
-                        Copyright &copy; 2022 All Rights Reserved - ISM 6225 Assignment 2   
-                    </p>
-                </div>
+    <div class="main">
+        <h1>Top 5 of All Time</h1>    
+        
+        <!-- Top 5 Movies -->
+        <h2>Movies</h2>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/shawshank-redemption.jpg" alt="The Shawshank Redemption" />
             </div>
-            <hr>
+            <div class="column" style="overflow: auto; ">
+                <h3>1. The Shawshank Redemption</h3>
+                <p>
+                    Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.<br />
+                    <div>Year: 1994</div>
+                    <div>Director: Frank Darabont</div>
+                    <div>Writers: Stephen King and Frank Darabont</div>
+                    <div>Actors: Tim Robbins, Morgan Freeman and Bob Gunton</div>
+                </p>
+            </div>
         </div>
-    </footer>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/the-godfather.jpg" alt="The Godfather" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>2. The Godfather</h3>
+                <p>
+                    The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.<br />
+                    <div>Year: 1972</div>
+                    <div>Director: Francis Ford Coppola</div>
+                    <div>Writers: Mario Puzo and Francis Ford Coppola</div>
+                    <div>Actors: Marlon Brando, Al Pacino and James Caan</div>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/the-dark-knight.jpg" alt="The Dark Knight" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>3. The Dark Knight</h3>
+                <p>
+                    When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.<br />
+                    <div>Year: 2008</div>
+                    <div>Director: Christopher Nolan</div>
+                    <div>Writers: Jonathan Nolan, Christopher Nolan and David S. Goyer</div>
+                    <div>Actors: Christian Bale, Heath Ledger and Aaron Eckhart</div>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/the-godfather-part2.jpg" alt="The Godfather: Part II" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>4. The Godfather: Part II</h3>
+                <p>
+                    The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.<br />
+                    <div>Year: 1974</div>
+                    <div>Director: Francis Ford Coppola</div>
+                    <div>Writers: Mario Puzo and Francis Ford Coppola</div>
+                    <div>Actors: Al Pacino, Robert De Niro and Robert Duvall</div>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/12-angry-men.jpg" alt="12 Angry Men" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>5. 12 Angry Men </h3>
+                <p>
+                    The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.<br />
+                    <div>Year: 1957</div>
+                    <div>Director: Signey Lumet</div>
+                    <div>Writer: Reginal Rose</div>
+                    <div>Actors: Henry Fonda, Lee J. Cobb and Martin Balsam</div>
+                </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Top 5 TV Shows -->
+        <h2>TV Shows</h2>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/breaking-bad.jpg" alt="Breaking Bad" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>1. Breaking Bad</h3>
+                <p>
+                    A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.<br />
+                    <div>Years: 2008 - 2013</div>
+                    <div>Creator: Vince Gilligan</div>
+                    <div>Stars: Bryan Cranston, Aaron Paul and Anna Gunn</div>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/band-of-brothers.jpg" alt="Band Of Brothers" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>2. Band Of Brothers</h3>
+                <p>
+                    The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day.<br />
+                    <div>Year: 2001</div>
+                    <div>Creators: Steven Spielberg and Tom Hanks</div>
+                    <div>Stars: Scott Grimes, Damian Lewis and Ron Livingston</div>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/chernobyl.jpg" alt="Chernobyl" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>3. Chernobyl</h3>
+                <p>
+                    In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.<br />
+                    <div>Year: 2019</div>
+                    <div>Creator: Craig Mazin</div>
+                    <div>Stars: Jessie Buckley, Jared Harris and Stellan Skarsgård</div>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/the-wire.jpg" alt="The Wire" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>4. The Wire</h3>
+                <p>
+                    The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.<br />
+                    <div>Years: 2002 - 2008</div>
+                    <div>Creator: David Simon</div>
+                    <div>Stars: Dominic West, Lance Reddick and Sonja Sohn</div>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="overflow: auto; ">
+                <img width="100%" src="./img/avatar.jpg" alt="Avatar: The Last Airbender" />
+            </div>
+            <div class="column" style="overflow: auto; ">
+                <h3>5. Avatar: The Last Airbender</h3>
+                <p>
+                    Tn a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.<br />
+                    <div>Years: 2005 - 2008</div>
+                    <div>Creators: Michael Dante DiMartino and Bryan Konietzko</div>
+                    <div>Stars: Dee Bradley Baker, Zach Tyler Eisen and Mae Whitman</div>
+                </p>
+            </div>
+        </div>
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <p class="copyright-text">
+                            Copyright &copy; 2022 All Rights Reserved - ISM 6225 Assignment 2   
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
 
